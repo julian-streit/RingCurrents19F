@@ -39,5 +39,3 @@ Deactivate the virtual environment when finished:
 ```
 deactivate
 ```
-# Contact
-If you experience any issues, please contact julian.streit.16@ucl.ac.uk
