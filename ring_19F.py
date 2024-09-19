@@ -2,7 +2,6 @@
 
 # Import modules
 import numpy as np
-import pandas as pd
 import MDAnalysis.analysis.distances
 import MDAnalysis as md
 import argparse
