@@ -154,7 +154,7 @@ else:
         name = FILE[:-4] # extract name by rmoving .pdb ending
 
         # load structure
-        u = md.Universe(args.dir+FILE)
+        u = md.Universe(args.dir+str('/')+FILE)
         aromatic_residue = u.select_atoms('resid {}'.format(args.res2)).resnames[0]
         distances = calc_distance(u,args.res1,args.res2,aromatic_residue,list(args.atoms),stride=args.stride)
         angles = calc_angle(u,args.res1,args.res2,aromatic_residue,list(args.atoms),stride=args.stride)
