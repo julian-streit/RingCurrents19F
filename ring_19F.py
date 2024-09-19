@@ -129,8 +129,8 @@ if args.dir==None:
     angles = calc_angle(u,args.res1,args.res2,aromatic_residue,list(args.atoms),stride=args.stride)
 
     # save data
-    np.savetxt(args.output+'distances_{}F_{}{}.txt'.format(args.res1,args.res2,aromatic_residue),distances)
-    np.savetxt(args.output+'angles_{}F_{}{}.txt'.format(args.res1,args.res2,aromatic_residue),angles)
+    np.savetxt(args.output+'/distances_{}F_{}{}.txt'.format(args.res1,args.res2,aromatic_residue),distances)
+    np.savetxt(args.output+'/angles_{}F_{}{}.txt'.format(args.res1,args.res2,aromatic_residue),angles)
 
     if args.geomfactor=='True':
         distances_cm = distances*1e-8
@@ -138,7 +138,7 @@ if args.dir==None:
         geom = (1-3*np.cos(angles_rad)**2)/(distances_cm**3)
 
         # save data
-        np.savetxt(args.output+'geomfactors_{}F_{}{}.txt'.format(args.res1,args.res2,aromatic_residue),geom)
+        np.savetxt(args.output+'/geomfactors_{}F_{}{}.txt'.format(args.res1,args.res2,aromatic_residue),geom)
 
 else:
     pdb_files = []
@@ -160,8 +160,8 @@ else:
         angles = calc_angle(u,args.res1,args.res2,aromatic_residue,list(args.atoms),stride=args.stride)
 
         # save data
-        np.savetxt(args.output+'{}_distances_{}F_{}{}.txt'.format(name,args.res1,args.res2,aromatic_residue),distances)
-        np.savetxt(args.output+'{}_angles_{}F_{}{}.txt'.format(name,args.res1,args.res2,aromatic_residue),angles)
+        np.savetxt(args.output+'/{}_distances_{}F_{}{}.txt'.format(name,args.res1,args.res2,aromatic_residue),distances)
+        np.savetxt(args.output+'/{}_angles_{}F_{}{}.txt'.format(name,args.res1,args.res2,aromatic_residue),angles)
 
         if args.geomfactor=='True':
             distances_cm = distances*1e-8
@@ -169,7 +169,7 @@ else:
             geom = (1-3*np.cos(angles_rad)**2)/(distances_cm**3)
 
             # save data
-            np.savetxt(args.output+'{}_geomfactors_{}F_{}{}.txt'.format(name,args.res1,args.res2,aromatic_residue),geom)
+            np.savetxt(args.output+'/{}_geomfactors_{}F_{}{}.txt'.format(name,args.res1,args.res2,aromatic_residue),geom)
 
 
 print('Done!')
