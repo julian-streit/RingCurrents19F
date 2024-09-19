@@ -5,8 +5,19 @@ This python script calculates distances and angles between fluorine atoms and ar
 Python3.7 or later
 
 # Installation
-1. git clone https://github.com/julian-streit/RingCurrents19F.git
-2. cd RingCurrents19F
-3. python -m venv pyRingCurrents19F
-4. source pyRingCurrents19F/bin/activate
-5. 
+```
+git clone https://github.com/julian-streit/RingCurrents19F.git
+cd RingCurrents19F
+python -m venv pyRingCurrents19F
+source pyRingCurrents19F/bin/activate
+pip install numpy MDAnalysis
+python ring_19F.py -h
+```
+
+# Testing/Example
+```
+mkdir output_dir
+mkdir AF_output_dir
+```
+Example of running the script on an MD trajectory:
+```
