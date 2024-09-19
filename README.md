@@ -33,7 +33,7 @@ python ring_19F.py -pdb MD_data/topology.pdb -res1 655 -res2 675 -atoms CH FH1 F
 
 Example of running the script on multiple pdb files stored in a directory (batch analysis):
 ```
-python ring_19F.py -dir AF_data -res1 11 -res2 31 -atoms OH -output AF_output_dir/ -geomfactor True
+python ring_19F.py -dir AF_data/ -res1 11 -res2 31 -atoms OH -output AF_output_dir/ -geomfactor True
 ```
 Deactivate the virtual environment when finished:
 ```
