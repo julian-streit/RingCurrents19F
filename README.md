@@ -15,7 +15,7 @@ python ring_19F.py -h
 deactivate
 ```
 
-# Testing/Example
+# Testing/Examples
 ```
 mkdir output_dir
 mkdir AF_output_dir
