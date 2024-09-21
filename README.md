@@ -2,7 +2,7 @@
 This python script calculates distances and angles between fluorine atoms and aromatic rings to predict suitable labelling sites for 19F NMR experiments.
 
 # Requirements
-Python3.7 or later
+Python3.10 or later
 
 # Installation
 ```
