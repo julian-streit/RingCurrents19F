@@ -19,7 +19,7 @@ parser.add_argument('-res1',required=True,help='19F labelled residue number')
 parser.add_argument('-res2',required=True,help='Aromatic residue number')
 parser.add_argument('-atoms',required=True,nargs='+',help='Fluorine atom name(s) - if multiple are provided the center of mass of the listed atoms will be used')
 parser.add_argument('-output',required=True,help='Output directory')
-parser.add_argument('-geomfactor',default=False,help='Set to True to get the geometric factor, (1-3cos^2(theta) / r^3')
+parser.add_argument('-geomfactor',default=False,help='Set to True to get the geometric factor, (1-3cos^2(theta)) / r^3')
 args = parser.parse_args()
 
 # define functions
