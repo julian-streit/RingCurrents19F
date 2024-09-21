@@ -14,7 +14,7 @@ pip install numpy MDAnalysis
 python ring_19F.py -h
 deactivate
 ```
-# Input description 
+# Usage
 ```
 usage: Ring-19F [-h] [-pdb PDB] [-dir DIR] [-xtc XTC] [-stride STRIDE] -res1
                 RES1 -res2 RES2 -atoms ATOMS [ATOMS ...] -output OUTPUT
