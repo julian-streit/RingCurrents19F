@@ -14,6 +14,37 @@ pip install numpy MDAnalysis
 python ring_19F.py -h
 deactivate
 ```
+# Input description 
+```
+usage: Ring-19F [-h] [-pdb PDB] [-dir DIR] [-xtc XTC] [-stride STRIDE] -res1
+                RES1 -res2 RES2 -atoms ATOMS [ATOMS ...] -output OUTPUT
+                [-geomfactor GEOMFACTOR]
+
+This python script calculates distances and angles between fluorine atoms and
+aromatic rings
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -pdb PDB              PDB file of structure to be analysed and/or topology
+                        for MD trajectory
+  -dir DIR              directory containing multiple pdb files for batch
+                        analysis
+  -xtc XTC              XTC trajectory file (has to be compatible with the PDB
+                        option)
+  -stride STRIDE        Stride for trajectory analysis (e.g., stride=10 means
+                        that every 10th frame is analysed)
+  -res1 RES1            19F labelled residue number
+  -res2 RES2            Aromatic residue number
+  -atoms ATOMS [ATOMS ...]
+                        Fluorine atom name(s) - if multiple are provided the
+                        center of mass of the listed atoms will be used
+  -output OUTPUT        Output directory
+  -geomfactor GEOMFACTOR
+                        Set to True to get the geometric factor,
+                        (1-3cos^2(theta) / r^3
+
+Units: Distances = Angstrom, Angles = Degrees, Geomectric factors = cm^-3
+```
 
 # Testing/Examples
 ```
