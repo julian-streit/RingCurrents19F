@@ -41,7 +41,7 @@ optional arguments:
   -output OUTPUT        Output directory
   -geomfactor GEOMFACTOR
                         Set to True to get the geometric factor,
-                        (1-3cos^2(theta) / r^3
+                        (1-3cos^2(theta)) / r^3
 
 Units: Distances = Angstrom, Angles = Degrees, Geomectric factors = cm^-3
 ```
